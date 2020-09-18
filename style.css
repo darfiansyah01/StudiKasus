@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #F6F6F6;
+}
+p, h3, h5, h1{
+    cursor: default;
+}
+
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+}
+.nav-brand{
+    width: 100px;
+    margin-right: 50px;
+}
+.nav-brand img{
+    width: 100%;
+}
+.nav-list{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    margin-right: 20px;
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    padding: 5px 8px;
+    opacity: 1;
+    visibility: hidden;
+}
+.dropdown li{
+    list-style: none;
+    margin-top: 10px;
+    border-bottom: 0.5px solid #cccccc;
+}
+.dropdown li a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-list li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-item{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-item span{
+    margin-left: 4px;
+}
+.login-btn{
+    display: flex;
+    position: absolute;
+    right: 5%;
+}
+.login{
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 6px 18px;
+    color: #FF9500;
+    transition: 0.3s ease-in-out;
+}
+.signup{
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 6px 18px;
+    background-color:  #FF9500;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.menu-icon{
+    display: none;
+}
+
+
+
+/* Banner */
+.banner{
+    width: 100%;
+    height: 700px;
+    background: url("/image/Group\ 59.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 50px 100px;
+}
+.banner-text{
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+    position: relative;
+}
+.banner-text-menu{
+    position: absolute;
+    top: 8%;
+}
+.banner-text-menu span{
+    color:  #FF9500;
+    cursor: pointer;
+}
+.banner-text-menu span i{
+    margin: 0 5px;
+    color: #000;
+}
+.banner-text-kolaborasi{
+    position: absolute;
+    top: 40%;
+    margin-left: 50px;
+}
+.banner-text-kolaborasi h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.banner-text-kolaborasi p{
+    font-size: 22px;
+}
+.banner-text-kolaborasi p span{
+    color: #6ED3FF;
+}
+.banner-image{
+    width: 100%;
+    margin-left: 50px;
+}
+.banner-image img{
+    width: 100%;
+}
+
+
+
+/* Adventage */
+.container{
+    width: 100%;
+    padding: 50px 150px;
+}
+.header{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 24px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.adventage{
+    width: 350px; 
+    padding: 8px;
+}
+.adventage-icon{
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px 0 rgba(110, 211, 255, 0.2)
+}
+.adventage-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: #6ED3FF;
+}
+.adventage h5{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.adventage p{
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+
+  
+/* Jenis Kemitraan */
+.container-fluid{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-fluid .wrapper{
+    justify-content: space-around;
+}
+.card-media{
+    width: 250px;
+    background-color: #fff;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+.card-media span i{
+    margin: 12px 0;
+    font-size: 80px;
+    color: #FF9500;
+}
+.card-media h3{
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+.card-media p{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+
+/* Contact */
+.header span p{
+    margin-top: 14px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.header span hr{
+    margin-top: 14px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+}
+.form-page{
+    padding: 0 50px 50px 50px;
+    text-align: center;
+}
+.form-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.personal-form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.file-form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.personal-form, .file-form label{
+    font-size: 14px;
+    text-align: left;
+}
+.personal-form label span, .file-form label span{
+    color: red;
+}
+.input-field{
+    margin-top: 6px;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+.upload-field{
+    width: 100px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+.btn-submit{
+    padding: 8px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FF9500;
+    color: #fff;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-submit:hover{
+    opacity: 0.8;
+}
+
+@media (min-width:550px) and (max-width:990px){
+
+    /** Navbar **/
+    .nav-list{
+        width: 300px;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        top: 0;
+        position: fixed;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 100;
+        right: -25rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-list.active{
+        right: 0;
+    }
+    .nav-list li{        
+        margin: 16px 0;
+        display: block;
+        text-align: center;
+        top: 30%;
+    }
+    .nav-list li .dropdown{
+        position: relative;
+        display: none;
+    }    
+    .nav-list li:hover > ul{
+        display: block;
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+    .menu-icon i{
+        font-size: 20px;
+        cursor: pointer;
+        color: #000;
+    }    
+    .open{
+        position: absolute;
+        right: 30px;
+    }
+
+    .close{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .login-btn{
+        width: 80%;
+        border-top: 2px solid #eeeeee;
+        display:block;
+        position: relative;
+        top: 35%;
+        left: 0;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    .login{
+        background-color: #FFF;
+        border: 1px solid #FF9500;
+    }
+
+
+    /** Banner **/
+    .banner{
+        height: 500px;
+        padding: 0 38px;
+    }
+    .banner-text{
+        margin-right: 10px;
+    }
+    .banner-text-kolaborasi{
+        top: 40%;
+        margin-left: 0;
+    }
+    .banner-text-kolaborasi h1{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .banner-text-kolaborasi p{
+        font-size: 12px;
+    }
+    .banner-image{
+        margin-left: 10px;
+    }
+
+
+
+    /** Adventage **/
+    .container{
+        padding: 40px;
+    }
+    .adventage-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .adventage-icon i{
+        font-size: 24px;
+    }
+    .adventage h5{
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .adventage p{
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+
+
+    /** Jenis Kemitraan **/
+    .container-fluid{
+        width: 90%;
+    }
+    .card-media{
+        width: 140px;
+        padding: 8px;
+    }
+    .card-media span i{
+        font-size: 50px;
+    }
+    .card-media h3{
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+    .card-media p{
+        font-size: 8px;
+        margin-bottom: 12px;
+    }
+
+
+
+    /** Contact **/
+    .form-page{
+        padding: 0 20px 20px 20px;
+    }
+    .personal-form{
+        margin-right: 14px;
+    }
+    .file-form{
+        margin-left: 14px;
+    }
+    .personal-form, .file-form label{
+        font-size: 12px;
+    }
+    .input-field{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .upload-field{
+        padding: 5px 10px;
+    }
+    .btn-submit{
+        padding: 6px 28px;
+        font-size: 14px;
+        margin-top: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+}
+
+
+
+@media (max-width:550px) {
+    /** Navbar **/
+    .navbar{
+        padding: 0 50px;
+    }
+    .nav-list{
+        width: 300px;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        top: 0;
+        position: fixed;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 100;
+        right: -25rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-list.active{
+        right: 0;
+    }
+    .nav-list li{        
+        margin: 16px 0;
+        display: block;
+        text-align: center;
+        top: 30%;
+    }
+    .nav-list li .dropdown{
+        position: relative;
+        display: none;
+    }    
+    .nav-list li:hover > ul{
+        display: block;
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+    .menu-icon i{
+        font-size: 20px;
+        cursor: pointer;
+        color: #000;
+    }    
+    .open{
+        position: absolute;
+        right: 30px;
+    }
+    .close{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .login-btn{
+        width: 80%;
+        border-top: 2px solid #eeeeee;
+        display:block;
+        position: relative;
+        top: 35%;
+        left: 0;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    .login{
+        background-color: #FFF;
+        border: 1px solid #FF9500;
+    }
+
+
+    /** Banner **/
+    .banner{
+        height: 600px;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    .banner-text{
+        margin-right: 0;
+    }
+    .banner-text-kolaborasi{
+        top: 30%;
+        margin-left: 30px;
+    }
+    .banner-text-kolaborasi h1{
+        font-size: 35px;
+    }
+    .banner-text-kolaborasi p{
+        font-size: 18px;
+    }
+
+
+
+    /* Adventage */
+    .container{
+        padding: 30px 50px;
+    }
+    .wrapper{        
+        flex-wrap: wrap;
+    }
+    .adventage{
+        width: 180px; 
+        padding: 8px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .adventage-icon{
+        background-color: #fff;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .adventage-icon i{
+        font-size: 24px;
+    }
+    .adventage h5{
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .adventage p{
+        font-size: 12px;
+    }
+
+
+    
+    /* Jenis Kemitraan */
+    .card-media{
+        margin-bottom: 14px;
+    }
+
+
+    /* Contact */
+    .form-page{
+        padding: 0 16px 16px 16px;
+    }
+    .form-input{
+        flex-direction: column;
+    }
+    .personal-form{
+        flex: 1;
+        margin-right: 0;
+    }
+    .file-form{
+        margin-left: 0;
+    }
+}
