@@ -165,8 +165,12 @@ p, h3, h5, h1{
     justify-content: space-between;
 }
 .adventage{
-    width: 350px; 
-    padding: 8px;
+    width: 300px; 
+    padding: 18px;
+}
+.adventage-down{
+    width: 300px;
+    margin-top: 100px;
 }
 .adventage-icon{
     background-color: #fff;
@@ -184,11 +188,11 @@ p, h3, h5, h1{
     font-size: 32px;
     color: #6ED3FF;
 }
-.adventage h5{
+.adventage h5, .adventage-down h5{
     font-size: 16px;
     margin-top: 20px;
 }
-.adventage p{
+.adventage p, .adventage-down p{
     font-size: 14px;
     margin-top: 6px;
 }
@@ -219,6 +223,7 @@ p, h3, h5, h1{
 }
 .card-media h3{
     margin-bottom: 14px;
+    margin-top: 18px;
     font-size: 20px;
 }
 .card-media p{
@@ -421,7 +426,7 @@ p, h3, h5, h1{
         font-size: 50px;
     }
     .card-media h3{
-        margin-bottom: 14px;
+        margin-top: 8px;
         font-size: 14px;
     }
     .card-media p{
@@ -564,6 +569,13 @@ p, h3, h5, h1{
         padding: 8px;
         margin-bottom: 20px;
         text-align: center;
+    }
+    .adventage-down{
+        width: 180px;
+        text-align: center;
+        margin-top: 0;
+        padding: 8px;
+        margin-bottom: 20px;
     }
     .adventage-icon{
         background-color: #fff;
